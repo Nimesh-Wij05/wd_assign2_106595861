@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- This tells the browser that this file uses HTML5. -->
+<html lang="en">
+<!-- The head section stores page information that is not directly shown in the main page area. -->
+<head>
+  <!-- This sets the character encoding so text displays correctly. -->
+  <meta charset="UTF-8">
+  <!-- This makes the page scale properly on phones and tablets. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- This is the page title shown in the browser tab. -->
+  <title>Recommend - Student Bites</title>
+  <!-- This links the external CSS file to style the page. -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- This links the external JavaScript file and defer makes it run after the HTML loads. -->
+  <script src="js/script.js" defer></script>
+</head>
+
+
+
+<!-- The body contains everything visible on the webpage. -->
+<body>
+<!-- The header element is used for the website logo and title. -->
+<header>
+  <!-- This image displays the Student Bites logo and includes alt text for accessibility. -->
+  <img class="logo" src="images/logo.png" alt="Student Bites logo">
+  <!-- This is the main website heading. -->
+  <h1>Student Bites</h1>
+  <!-- This short sentence explains the purpose of the website. -->
+  <p>Affordable eats and easy bookings for Melbourne students.</p>
+</header>
+<!-- The nav element contains the main menu for the whole website. -->
+<nav>
+  <!-- This link goes to the home page. -->
+  <a class="" href="index.html">Home</a>
+  <!-- This link goes to the restaurant listing page. -->
+  <a class="" href="restaurants.html">Restaurants</a>
+  <!-- This link goes to the recommendation form page. -->
+  <a class="active" href="recommend.html">Recommend</a>
+  <!-- This link goes to the account registration page. -->
+  <a class="" href="register.html">Register</a>
+  <!-- This link goes to the reservation booking page. -->
+  <a class="" href="reservation.html">Reservation</a>
+  <!-- This link goes to the optional bonus bill calculator page. -->
+  <a class="" href="bill.html">Bill Calculator</a>
+</nav>
+<!-- The main element contains the unique content for this page. -->
+<main>
+  <!-- This section contains the recommendation form. -->
+  <section class="form-box">
+    <!-- This heading explains the page purpose. -->
+    <h2>Get a Restaurant Recommendation</h2>
+    <!-- This paragraph tells users how the form works. -->
+    <p>Select your preferences and the website will suggest a restaurant.</p>
+    <!-- This form is handled by JavaScript, so it does not need an action attribute. -->
+    <form id="recommendForm">
+      <!-- This label describes the dietary preference dropdown. -->
+      <label for="diet">Dietary preference</label>
+      <!-- This select lets the user choose a diet option. -->
+      <select id="diet"><option>None</option><option>Vegan</option><option>Halal</option></select>
+      <!-- This label describes the budget dropdown. -->
+      <label for="budget">Budget range</label>
+      <!-- This select lets the user choose a budget. -->
+      <select id="budget"><option>Low</option><option>Medium</option><option>High</option></select>
+      <!-- This label describes the dining purpose dropdown. -->
+      <label for="purpose">Dining purpose</label>
+      <!-- This select lets the user choose why they are dining. -->
+      <select id="purpose"><option>Family</option><option>Date</option><option>Business</option><option>Friends</option></select>
+      <!-- This button submits the form and starts the JavaScript recommendation logic. -->
+      <button type="submit">Show Recommendation</button>
+    </form>
+    <!-- JavaScript writes the recommended restaurant inside this div. -->
+    <div id="recommendResult" class="result-box"></div>
+  </section>
+</main>
+<!-- The footer contains simple copyright information. -->
+<footer>
+  <!-- This paragraph gives the website name and assignment context. -->
+  <p>&copy; 2026 Student Bites. COS10005 Assignment 2.</p>
+</footer>
+</body>
+</html>

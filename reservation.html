@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- This tells the browser that this file uses HTML5. -->
+<html lang="en">
+<!-- The head section stores page information that is not directly shown in the main page area. -->
+<head>
+  <!-- This sets the character encoding so text displays correctly. -->
+  <meta charset="UTF-8">
+  <!-- This makes the page scale properly on phones and tablets. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- This is the page title shown in the browser tab. -->
+  <title>Reservation - Student Bites</title>
+  <!-- This links the external CSS file to style the page. -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- This links the external JavaScript file and defer makes it run after the HTML loads. -->
+  <script src="js/script.js" defer></script>
+</head>
+
+
+
+<!-- The body contains everything visible on the webpage. -->
+<body>
+<!-- The header element is used for the website logo and title. -->
+<header>
+  <!-- This image displays the Student Bites logo and includes alt text for accessibility. -->
+  <img class="logo" src="images/logo.png" alt="Student Bites logo">
+  <!-- This is the main website heading. -->
+  <h1>Student Bites</h1>
+  <!-- This short sentence explains the purpose of the website. -->
+  <p>Affordable eats and easy bookings for Melbourne students.</p>
+</header>
+<!-- The nav element contains the main menu for the whole website. -->
+<nav>
+  <!-- This link goes to the home page. -->
+  <a class="" href="index.html">Home</a>
+  <!-- This link goes to the restaurant listing page. -->
+  <a class="" href="restaurants.html">Restaurants</a>
+  <!-- This link goes to the recommendation form page. -->
+  <a class="" href="recommend.html">Recommend</a>
+  <!-- This link goes to the account registration page. -->
+  <a class="" href="register.html">Register</a>
+  <!-- This link goes to the reservation booking page. -->
+  <a class="active" href="reservation.html">Reservation</a>
+  <!-- This link goes to the optional bonus bill calculator page. -->
+  <a class="" href="bill.html">Bill Calculator</a>
+</nav>
+<!-- The main element contains the unique content for this page. -->
+<main>
+  <!-- This section contains the reservation form required by the assignment. -->
+  <section class="form-box">
+    <!-- This heading introduces the reservation page. -->
+    <h2>Make a Reservation</h2>
+    <!-- This form submits to the required Mercury test script when validation passes. -->
+    <form id="reservationForm" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+      <!-- This label describes the full name field. -->
+      <label for="fullName">Full name</label>
+      <!-- This input collects the user's full name. -->
+      <input type="text" id="fullName" name="fullName">
+      <!-- This label describes the email field. -->
+      <label for="resEmail">Email address</label>
+      <!-- This input collects the user's email address. -->
+      <input type="text" id="resEmail" name="email">
+      <!-- This label describes the phone field. -->
+      <label for="resPhone">Phone number</label>
+      <!-- This input collects the user's phone number. -->
+      <input type="text" id="resPhone" name="phone">
+      <!-- This label describes the restaurant dropdown. -->
+      <label for="restaurantSelect">Restaurant selection</label>
+      <!-- This select allows the user to choose or change the restaurant. -->
+      <select id="restaurantSelect" name="restaurant"><option>Campus Grill</option><option>Noodle Nest</option><option>Green Bowl Co.</option><option>Halal Hub</option><option>Slice Society</option><option>Seoul Student BBQ</option></select>
+      <!-- This label describes the date and time field. -->
+      <label for="dateTime">Reservation date and time</label>
+      <!-- This input collects the reservation date and time. -->
+      <input type="datetime-local" id="dateTime" name="dateTime">
+      <!-- This label describes the number of people field. -->
+      <label for="people">Number of people</label>
+      <!-- This input collects the group size. -->
+      <input type="number" id="people" name="people">
+      <!-- This label describes the optional special requests field. -->
+      <label for="requests">Special requests</label>
+      <!-- This textarea allows optional requests such as seating needs. -->
+      <textarea id="requests" name="requests"></textarea>
+      <!-- This label describes the deposit field. -->
+      <label for="deposit">Deposit amount</label>
+      <!-- This readonly input is filled automatically by JavaScript. -->
+      <input type="text" id="deposit" name="deposit" readonly>
+      <!-- This label describes the payment method dropdown. -->
+      <label for="paymentMethod">Deposit method</label>
+      <!-- This select controls whether voucher or card fields are shown. -->
+      <select id="paymentMethod" name="paymentMethod"><option>Voucher</option><option>Online</option></select>
+      <!-- This div contains the voucher code field shown for voucher payment. -->
+      <div id="voucherArea">
+        <!-- This label describes the voucher code field. -->
+        <label for="voucherCode">Voucher Code</label>
+        <!-- This input collects a 12 digit voucher code, but this assignment says no validation is needed. -->
+        <input type="text" id="voucherCode" name="voucherCode">
+      </div>
+      <!-- This div contains card fields shown for online payment. -->
+      <div id="cardArea">
+        <!-- This label describes the card type dropdown. -->
+        <label for="cardType">Card type</label>
+        <!-- This select lets JavaScript know whether to check 15 or 16 digits. -->
+        <select id="cardType" name="cardType"><option>Visa</option><option>Mastercard</option><option>Amex</option></select>
+        <!-- This label describes the card number field. -->
+        <label for="cardNumber">Credit card number</label>
+        <!-- This input collects fake card numbers for format checking only. -->
+        <input type="text" id="cardNumber" name="cardNumber">
+      </div>
+      <!-- This label describes the billing email field. -->
+      <label for="billingEmail">Billing email address</label>
+      <!-- This input collects the billing email address. -->
+      <input type="text" id="billingEmail" name="billingEmail">
+      <!-- This label contains the same as email checkbox. -->
+      <label class="check-line"><input type="checkbox" id="sameEmail"> Same as email address</label>
+      <!-- JavaScript displays reservation errors inside this div. -->
+      <div id="reservationErrors" class="error-box"></div>
+      <!-- This button submits the reservation form. -->
+      <button type="submit">Submit Reservation</button>
+    </form>
+  </section>
+</main>
+<!-- The footer contains simple copyright information. -->
+<footer>
+  <!-- This paragraph gives the website name and assignment context. -->
+  <p>&copy; 2026 Student Bites. COS10005 Assignment 2.</p>
+</footer>
+</body>
+</html>

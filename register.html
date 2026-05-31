@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- This tells the browser that this file uses HTML5. -->
+<html lang="en">
+<!-- The head section stores page information that is not directly shown in the main page area. -->
+<head>
+  <!-- This sets the character encoding so text displays correctly. -->
+  <meta charset="UTF-8">
+  <!-- This makes the page scale properly on phones and tablets. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- This is the page title shown in the browser tab. -->
+  <title>Register - Student Bites</title>
+  <!-- This links the external CSS file to style the page. -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- This links the external JavaScript file and defer makes it run after the HTML loads. -->
+  <script src="js/script.js" defer></script>
+</head>
+
+
+
+<!-- The body contains everything visible on the webpage. -->
+<body>
+<!-- The header element is used for the website logo and title. -->
+<header>
+  <!-- This image displays the Student Bites logo and includes alt text for accessibility. -->
+  <img class="logo" src="images/logo.png" alt="Student Bites logo">
+  <!-- This is the main website heading. -->
+  <h1>Student Bites</h1>
+  <!-- This short sentence explains the purpose of the website. -->
+  <p>Affordable eats and easy bookings for Melbourne students.</p>
+</header>
+<!-- The nav element contains the main menu for the whole website. -->
+<nav>
+  <!-- This link goes to the home page. -->
+  <a class="" href="index.html">Home</a>
+  <!-- This link goes to the restaurant listing page. -->
+  <a class="" href="restaurants.html">Restaurants</a>
+  <!-- This link goes to the recommendation form page. -->
+  <a class="" href="recommend.html">Recommend</a>
+  <!-- This link goes to the account registration page. -->
+  <a class="active" href="register.html">Register</a>
+  <!-- This link goes to the reservation booking page. -->
+  <a class="" href="reservation.html">Reservation</a>
+  <!-- This link goes to the optional bonus bill calculator page. -->
+  <a class="" href="bill.html">Bill Calculator</a>
+</nav>
+<!-- The main element contains the unique content for this page. -->
+<main>
+  <!-- This section contains the registration form required by the assignment. -->
+  <section class="form-box">
+    <!-- This heading introduces the registration page. -->
+    <h2>Register an Account</h2>
+    <!-- This form uses JavaScript validation before it is allowed to submit. -->
+    <form id="registerForm" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+      <!-- This label describes the username field. -->
+      <label for="username">Username</label>
+      <!-- This input collects the username. -->
+      <input type="text" id="username" name="username">
+      <!-- This label describes the email field. -->
+      <label for="regEmail">Email Address</label>
+      <!-- This input collects the email address. -->
+      <input type="text" id="regEmail" name="email">
+      <!-- This label describes the phone field. -->
+      <label for="regPhone">Phone Number</label>
+      <!-- This input collects the phone number. -->
+      <input type="text" id="regPhone" name="phone">
+      <!-- This label describes the password field. -->
+      <label for="password">Password</label>
+      <!-- This input hides the password characters. -->
+      <input type="password" id="password" name="password">
+      <!-- This label describes the confirm password field. -->
+      <label for="confirmPassword">Confirm Password</label>
+      <!-- This input checks that the user typed the same password twice. -->
+      <input type="password" id="confirmPassword" name="confirmPassword">
+      <!-- This fieldset groups the gender radio buttons. -->
+      <fieldset>
+        <!-- This legend names the radio button group. -->
+        <legend>Gender</legend>
+        <!-- This radio button allows the user to select Female. -->
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+        <!-- This radio button allows the user to select Male. -->
+        <label><input type="radio" name="gender" value="Male"> Male</label>
+        <!-- This radio button allows the user to select Other. -->
+        <label><input type="radio" name="gender" value="Other"> Other</label>
+      </fieldset>
+      <!-- This label describes the dietary preference dropdown. -->
+      <label for="dietPref">Dietary Preferences</label>
+      <!-- This select collects the user's dietary preference. -->
+      <select id="dietPref" name="dietPref"><option value="">Choose one</option><option>None</option><option>Vegan</option><option>Halal</option></select>
+      <!-- This label describes the country field. -->
+      <label for="country">Country/Region</label>
+      <!-- This input collects the country or region. -->
+      <input type="text" id="country" name="country">
+      <!-- JavaScript displays registration errors inside this div. -->
+      <div id="registerErrors" class="error-box"></div>
+      <!-- This button submits the registration form. -->
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</main>
+<!-- The footer contains simple copyright information. -->
+<footer>
+  <!-- This paragraph gives the website name and assignment context. -->
+  <p>&copy; 2026 Student Bites. COS10005 Assignment 2.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- This tells the browser that this file uses HTML5. -->
+<html lang="en">
+<!-- The head section stores page information that is not directly shown in the main page area. -->
+<head>
+  <!-- This sets the character encoding so text displays correctly. -->
+  <meta charset="UTF-8">
+  <!-- This makes the page scale properly on phones and tablets. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- This is the page title shown in the browser tab. -->
+  <title>Restaurants - Student Bites</title>
+  <!-- This links the external CSS file to style the page. -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- This links the external JavaScript file and defer makes it run after the HTML loads. -->
+  <script src="js/script.js" defer></script>
+</head>
+
+
+
+<!-- The body contains everything visible on the webpage. -->
+<body>
+<!-- The header element is used for the website logo and title. -->
+<header>
+  <!-- This image displays the Student Bites logo and includes alt text for accessibility. -->
+  <img class="logo" src="images/logo.png" alt="Student Bites logo">
+  <!-- This is the main website heading. -->
+  <h1>Student Bites</h1>
+  <!-- This short sentence explains the purpose of the website. -->
+  <p>Affordable eats and easy bookings for Melbourne students.</p>
+</header>
+<!-- The nav element contains the main menu for the whole website. -->
+<nav>
+  <!-- This link goes to the home page. -->
+  <a class="" href="index.html">Home</a>
+  <!-- This link goes to the restaurant listing page. -->
+  <a class="active" href="restaurants.html">Restaurants</a>
+  <!-- This link goes to the recommendation form page. -->
+  <a class="" href="recommend.html">Recommend</a>
+  <!-- This link goes to the account registration page. -->
+  <a class="" href="register.html">Register</a>
+  <!-- This link goes to the reservation booking page. -->
+  <a class="" href="reservation.html">Reservation</a>
+  <!-- This link goes to the optional bonus bill calculator page. -->
+  <a class="" href="bill.html">Bill Calculator</a>
+</nav>
+<!-- The main element contains the unique content for this page. -->
+<main>
+  <!-- This section contains the restaurant listing required by the assignment. -->
+  <section>
+    <!-- This heading introduces the restaurant page. -->
+    <h2>Available Restaurants</h2>
+    <!-- This paragraph explains what users can do on this page. -->
+    <p>Browse six student-friendly restaurants and choose one to reserve.</p>
+    <!-- This div uses CSS grid to display restaurant cards. -->
+    <div class="cards">
+      <!-- This article is one restaurant card. -->
+      <article class="card">
+        <!-- This image shows the restaurant or food style. -->
+        <img src="images/restaurant1.jpg" alt="Food from Campus Grill">
+        <!-- This heading shows the restaurant name. -->
+        <h3>Campus Grill</h3>
+        <!-- This paragraph shows the cuisine type. -->
+        <p><strong>Cuisine:</strong> Burgers and American</p>
+        <!-- This paragraph shows signature dishes and prices. -->
+        <p><strong>Signature dishes:</strong> Cheese Burger - $14, Loaded Fries - $10</p>
+        <!-- This paragraph shows the reservation deposit amount. -->
+        <p><strong>Deposit:</strong> $10</p>
+        <!-- This paragraph shows the average price per person. -->
+        <p><strong>Average price:</strong> Around $18 per person</p>
+        <!-- This paragraph gives a short 50 to 100 word description. -->
+        <p>Campus Grill is a casual burger restaurant for students who want a quick and affordable meal. It is a good option for lunch breaks, casual dinners, or small group catch ups after class. The menu focuses on simple comfort food with low prices and quick service.</p>
+        <!-- This link sends the restaurant name to the reservation page. -->
+        <a class="button" href="reservation.html?restaurant=Campus%20Grill">Reserve</a>
+      </article>
+      <!-- This article is one restaurant card. -->
+      <article class="card">
+        <!-- This image shows the restaurant or food style. -->
+        <img src="images/restaurant2.jpg" alt="Food from Noodle Nest">
+        <!-- This heading shows the restaurant name. -->
+        <h3>Noodle Nest</h3>
+        <!-- This paragraph shows the cuisine type. -->
+        <p><strong>Cuisine:</strong> Asian Noodles</p>
+        <!-- This paragraph shows signature dishes and prices. -->
+        <p><strong>Signature dishes:</strong> Chicken Ramen - $18, Veggie Stir Fry - $15</p>
+        <!-- This paragraph shows the reservation deposit amount. -->
+        <p><strong>Deposit:</strong> $12</p>
+        <!-- This paragraph shows the average price per person. -->
+        <p><strong>Average price:</strong> Around $20 per person</p>
+        <!-- This paragraph gives a short 50 to 100 word description. -->
+        <p>Noodle Nest is designed for students who want warm, filling meals without spending too much. It offers noodle soups, stir fry dishes, and simple rice meals. This restaurant is a good choice for quick dinners, business-style student meetings, or lunch between classes.</p>
+        <!-- This link sends the restaurant name to the reservation page. -->
+        <a class="button" href="reservation.html?restaurant=Noodle%20Nest">Reserve</a>
+      </article>
+      <!-- This article is one restaurant card. -->
+      <article class="card">
+        <!-- This image shows the restaurant or food style. -->
+        <img src="images/restaurant3.jpg" alt="Food from Green Bowl Co.">
+        <!-- This heading shows the restaurant name. -->
+        <h3>Green Bowl Co.</h3>
+        <!-- This paragraph shows the cuisine type. -->
+        <p><strong>Cuisine:</strong> Vegan and Healthy</p>
+        <!-- This paragraph shows signature dishes and prices. -->
+        <p><strong>Signature dishes:</strong> Vegan Bowl - $17, Smoothie - $8</p>
+        <!-- This paragraph shows the reservation deposit amount. -->
+        <p><strong>Deposit:</strong> $10</p>
+        <!-- This paragraph shows the average price per person. -->
+        <p><strong>Average price:</strong> Around $19 per person</p>
+        <!-- This paragraph gives a short 50 to 100 word description. -->
+        <p>Green Bowl Co. is a vegan-friendly restaurant that focuses on healthy bowls, salads, and smoothies. It is suitable for students with vegan or vegetarian preferences. The restaurant is relaxed, bright, and useful for casual meals, study breaks, or healthy lunch choices.</p>
+        <!-- This link sends the restaurant name to the reservation page. -->
+        <a class="button" href="reservation.html?restaurant=Green%20Bowl%20Co.">Reserve</a>
+      </article>
+      <!-- This article is one restaurant card. -->
+      <article class="card">
+        <!-- This image shows the restaurant or food style. -->
+        <img src="images/restaurant4.jpg" alt="Food from Halal Hub">
+        <!-- This heading shows the restaurant name. -->
+        <h3>Halal Hub</h3>
+        <!-- This paragraph shows the cuisine type. -->
+        <p><strong>Cuisine:</strong> Middle Eastern Halal</p>
+        <!-- This paragraph shows signature dishes and prices. -->
+        <p><strong>Signature dishes:</strong> HSP - $18, Chicken Plate - $22</p>
+        <!-- This paragraph shows the reservation deposit amount. -->
+        <p><strong>Deposit:</strong> $15</p>
+        <!-- This paragraph shows the average price per person. -->
+        <p><strong>Average price:</strong> Around $24 per person</p>
+        <!-- This paragraph gives a short 50 to 100 word description. -->
+        <p>Halal Hub provides halal-friendly Middle Eastern meals for students who want filling food at a reasonable price. Popular options include HSPs, wraps, and grilled plates. It is suitable for group meals, casual dinners, and students looking for halal dining options.</p>
+        <!-- This link sends the restaurant name to the reservation page. -->
+        <a class="button" href="reservation.html?restaurant=Halal%20Hub">Reserve</a>
+      </article>
+      <!-- This article is one restaurant card. -->
+      <article class="card">
+        <!-- This image shows the restaurant or food style. -->
+        <img src="images/restaurant5.jpg" alt="Food from Slice Society">
+        <!-- This heading shows the restaurant name. -->
+        <h3>Slice Society</h3>
+        <!-- This paragraph shows the cuisine type. -->
+        <p><strong>Cuisine:</strong> Pizza and Italian</p>
+        <!-- This paragraph shows signature dishes and prices. -->
+        <p><strong>Signature dishes:</strong> Margherita Pizza - $16, Pasta - $19</p>
+        <!-- This paragraph shows the reservation deposit amount. -->
+        <p><strong>Deposit:</strong> $12</p>
+        <!-- This paragraph shows the average price per person. -->
+        <p><strong>Average price:</strong> Around $17 per person</p>
+        <!-- This paragraph gives a short 50 to 100 word description. -->
+        <p>Slice Society is a simple pizza and pasta restaurant that works well for groups of friends. The meals are easy to share, the prices are student-friendly, and the setting is casual. It is a strong option for birthdays, group dinners, or relaxed weekend meals.</p>
+        <!-- This link sends the restaurant name to the reservation page. -->
+        <a class="button" href="reservation.html?restaurant=Slice%20Society">Reserve</a>
+      </article>
+      <!-- This article is one restaurant card. -->
+      <article class="card">
+        <!-- This image shows the restaurant or food style. -->
+        <img src="images/restaurant6.jpg" alt="Food from Seoul Student BBQ">
+        <!-- This heading shows the restaurant name. -->
+        <h3>Seoul Student BBQ</h3>
+        <!-- This paragraph shows the cuisine type. -->
+        <p><strong>Cuisine:</strong> Korean BBQ</p>
+        <!-- This paragraph shows signature dishes and prices. -->
+        <p><strong>Signature dishes:</strong> BBQ Set - $32, Fried Chicken - $20</p>
+        <!-- This paragraph shows the reservation deposit amount. -->
+        <p><strong>Deposit:</strong> $25</p>
+        <!-- This paragraph shows the average price per person. -->
+        <p><strong>Average price:</strong> Around $35 per person</p>
+        <!-- This paragraph gives a short 50 to 100 word description. -->
+        <p>Seoul Student BBQ is a slightly higher priced restaurant for students who want a more social dining experience. It is suitable for date nights, celebrations, and group dinners. The restaurant offers Korean BBQ sets, fried chicken, and share plates.</p>
+        <!-- This link sends the restaurant name to the reservation page. -->
+        <a class="button" href="reservation.html?restaurant=Seoul%20Student%20BBQ">Reserve</a>
+      </article>
+    </div>
+  </section>
+</main>
+<!-- The footer contains simple copyright information. -->
+<footer>
+  <!-- This paragraph gives the website name and assignment context. -->
+  <p>&copy; 2026 Student Bites. COS10005 Assignment 2.</p>
+</footer>
+</body>
+</html>

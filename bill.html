@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- This tells the browser that this file uses HTML5. -->
+<html lang="en">
+<!-- The head section stores page information that is not directly shown in the main page area. -->
+<head>
+  <!-- This sets the character encoding so text displays correctly. -->
+  <meta charset="UTF-8">
+  <!-- This makes the page scale properly on phones and tablets. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- This is the page title shown in the browser tab. -->
+  <title>Bill Calculator - Student Bites</title>
+  <!-- This links the external CSS file to style the page. -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- This links the external JavaScript file and defer makes it run after the HTML loads. -->
+  <script src="js/script.js" defer></script>
+</head>
+
+
+<!-- The body contains everything visible on the webpage. -->
+<body>
+<!-- The header element is used for the website logo and title. -->
+<header>
+  <!-- This image displays the Student Bites logo and includes alt text for accessibility. -->
+  <img class="logo" src="images/logo.png" alt="Student Bites logo">
+  <!-- This is the main website heading. -->
+  <h1>Student Bites</h1>
+  <!-- This short sentence explains the purpose of the website. -->
+  <p>Affordable eats and easy bookings for Melbourne students.</p>
+</header>
+<!-- The nav element contains the main menu for the whole website. -->
+<nav>
+  <!-- This link goes to the home page. -->
+  <a class="" href="index.html">Home</a>
+  <!-- This link goes to the restaurant listing page. -->
+  <a class="" href="restaurants.html">Restaurants</a>
+  <!-- This link goes to the recommendation form page. -->
+  <a class="" href="recommend.html">Recommend</a>
+  <!-- This link goes to the account registration page. -->
+  <a class="" href="register.html">Register</a>
+  <!-- This link goes to the reservation booking page. -->
+  <a class="" href="reservation.html">Reservation</a>
+  <!-- This link goes to the optional bonus bill calculator page. -->
+  <a class="active" href="bill.html">Bill Calculator</a>
+</nav>
+<!-- The main element contains the unique content for this page. -->
+<main>
+  <!-- This section contains the optional bonus bill calculator. -->
+  <section class="form-box">
+    <!-- This heading introduces the bill calculator. -->
+    <h2>Estimated Bill Calculator</h2>
+    <!-- This paragraph explains that the total is only an estimate. -->
+    <p>This simple calculator estimates the meal cost using the average price per person plus the reservation deposit.</p>
+    <!-- This form is handled by JavaScript and does not submit to a server. -->
+    <form id="billForm">
+      <!-- This label describes the restaurant dropdown. -->
+      <label for="billRestaurant">Restaurant</label>
+      <!-- This select lets the user choose the restaurant for the estimate. -->
+      <select id="billRestaurant"><option>Campus Grill</option><option>Noodle Nest</option><option>Green Bowl Co.</option><option>Halal Hub</option><option>Slice Society</option><option>Seoul Student BBQ</option></select>
+      <!-- This label describes the number of people field. -->
+      <label for="billPeople">Number of people</label>
+      <!-- This input collects the group size for the calculation. -->
+      <input type="number" id="billPeople">
+      <!-- This label describes the deposit field. -->
+      <label for="billDeposit">Reservation deposit</label>
+      <!-- This readonly input is automatically updated by JavaScript. -->
+      <input type="text" id="billDeposit" readonly>
+      <!-- This button starts the bill calculation. -->
+      <button type="submit">Calculate</button>
+    </form>
+    <!-- JavaScript writes the estimated bill result inside this div. -->
+    <div id="billResult" class="result-box"></div>
+  </section>
+</main>
+<!-- The footer contains simple copyright information. -->
+<footer>
+  <!-- This paragraph gives the website name and assignment context. -->
+  <p>&copy; 2026 Student Bites. COS10005 Assignment 2.</p>
+</footer>
+</body>
+</html>

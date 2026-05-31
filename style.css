@@ -1,0 +1,297 @@
+/* This universal selector applies the box model fix to every element. */
+* {
+  /* This makes padding and borders count inside the element width. */
+  box-sizing: border-box;
+}
+
+/* This styles the whole page body. */
+body {
+  /* This removes the default browser margin. */
+  margin: 0;
+  /* This sets a simple readable font. */
+  font-family: Arial, Helvetica, sans-serif;
+  /* This gives the page a light cream background. */
+  background: #f7f3ea;
+  /* This sets the main text colour. */
+  color: #222;
+  /* This makes paragraphs easier to read. */
+  line-height: 1.5;
+}
+
+/* This styles the top header area. */
+header {
+  /* This sets the dark green header background. */
+  background: #163b2c;
+  /* This makes the header text white. */
+  color: white;
+  /* This centres the logo and heading. */
+  text-align: center;
+  /* This adds space inside the header. */
+  padding: 25px 15px;
+}
+
+/* This styles the logo image. */
+.logo {
+  /* This sets the logo width. */
+  width: 80px;
+  /* This sets the logo height. */
+  height: 80px;
+  /* This makes the logo circular. */
+  border-radius: 50%;
+}
+
+/* This styles the navigation bar. */
+nav {
+  /* This sets the orange navigation background. */
+  background: #f28c28;
+  /* This centres all nav links. */
+  text-align: center;
+  /* This adds space inside the nav bar. */
+  padding: 10px;
+}
+
+/* This styles each navigation link. */
+nav a {
+  /* This sets the link text colour. */
+  color: #111;
+  /* This removes the underline from links. */
+  text-decoration: none;
+  /* This makes the nav text bold. */
+  font-weight: bold;
+  /* This adds clickable space around each link. */
+  padding: 10px 12px;
+  /* This allows padding to work neatly on links. */
+  display: inline-block;
+}
+
+/* This styles the hovered link and the current page link. */
+nav a:hover, nav a.active {
+  /* This changes the background to green. */
+  background: #163b2c;
+  /* This changes the text to white. */
+  color: white;
+  /* This rounds the corners. */
+  border-radius: 5px;
+}
+
+/* This styles the main page content area. */
+main {
+  /* This stops the content becoming too wide on desktop. */
+  max-width: 1100px;
+  /* This centres the main content. */
+  margin: auto;
+  /* This adds space inside the main content. */
+  padding: 20px;
+}
+
+/* This styles the home page hero section. */
+.hero {
+  /* This places the text and image side by side. */
+  display: flex;
+  /* This adds space between the text and image. */
+  gap: 20px;
+  /* This vertically aligns the text and image. */
+  align-items: center;
+  /* This gives the hero a white background. */
+  background: white;
+  /* This adds space inside the hero section. */
+  padding: 20px;
+  /* This rounds the hero corners. */
+  border-radius: 10px;
+}
+
+/* This gives the hero text and image equal width. */
+.hero div, .hero img {
+  /* Each part takes half the hero width. */
+  width: 50%;
+}
+
+/* This styles main images and card images. */
+.hero img, .card img {
+  /* This makes images shrink to fit their container. */
+  max-width: 100%;
+  /* This rounds image corners. */
+  border-radius: 8px;
+}
+
+/* This styles normal buttons and button-looking links. */
+.button, button {
+  /* This sets a green background. */
+  background: #163b2c;
+  /* This makes button text white. */
+  color: white;
+  /* This adds space inside the button. */
+  padding: 10px 14px;
+  /* This removes the default button border. */
+  border: 0;
+  /* This rounds the button corners. */
+  border-radius: 5px;
+  /* This removes underline from button links. */
+  text-decoration: none;
+  /* This keeps link buttons shaped like buttons. */
+  display: inline-block;
+  /* This shows a hand cursor on hover. */
+  cursor: pointer;
+}
+
+/* This styles the three boxes on the home page. */
+.three-boxes {
+  /* This places the boxes in a row. */
+  display: flex;
+  /* This adds space between boxes. */
+  gap: 15px;
+}
+
+/* This styles each home page box. */
+.three-boxes article {
+  /* This gives each box a white background. */
+  background: white;
+  /* This adds space inside each box. */
+  padding: 15px;
+  /* This rounds the box corners. */
+  border-radius: 8px;
+  /* This makes three boxes fit across the page. */
+  width: 33.33%;
+}
+
+/* This styles the restaurant card grid. */
+.cards {
+  /* This turns the card area into a grid. */
+  display: grid;
+  /* This creates three equal columns on desktop. */
+  grid-template-columns: repeat(3, 1fr);
+  /* This adds space between cards. */
+  gap: 20px;
+}
+
+/* This styles each restaurant card. */
+.card {
+  /* This gives cards a white background. */
+  background: white;
+  /* This adds space inside the card. */
+  padding: 15px;
+  /* This rounds the card corners. */
+  border-radius: 8px;
+  /* This adds a light border around the card. */
+  border: 1px solid #ddd;
+}
+
+/* This styles form containers. */
+.form-box {
+  /* This gives forms a white background. */
+  background: white;
+  /* This adds space inside forms. */
+  padding: 20px;
+  /* This rounds form corners. */
+  border-radius: 10px;
+  /* This limits the form width. */
+  max-width: 700px;
+  /* This centres the form on the page. */
+  margin: auto;
+}
+
+/* This styles labels and fieldset legends. */
+label, legend {
+  /* This puts labels on their own line. */
+  display: block;
+  /* This makes labels stand out. */
+  font-weight: bold;
+  /* This adds space above labels. */
+  margin-top: 12px;
+}
+
+/* This styles form inputs, dropdowns, and text areas. */
+input, select, textarea {
+  /* This makes fields fill the form width. */
+  width: 100%;
+  /* This adds space inside fields. */
+  padding: 10px;
+  /* This adds a small gap above fields. */
+  margin-top: 5px;
+  /* This adds a simple grey border. */
+  border: 1px solid #aaa;
+  /* This rounds the field corners. */
+  border-radius: 5px;
+  /* This sets readable input text size. */
+  font-size: 16px;
+}
+
+/* This styles radio button groups. */
+fieldset {
+  /* This adds a border around the radio group. */
+  border: 1px solid #aaa;
+  /* This adds space above the fieldset. */
+  margin-top: 12px;
+  /* This adds space inside the fieldset. */
+  padding: 10px;
+}
+
+/* This stops radio labels and checkbox labels looking too bold. */
+fieldset label, .check-line {
+  /* This makes the label text normal weight. */
+  font-weight: normal;
+}
+
+/* This stops radio buttons and checkboxes from stretching full width. */
+fieldset input, .check-line input {
+  /* This lets radio buttons and checkboxes use their natural width. */
+  width: auto;
+}
+
+/* This styles error messages. */
+.error-box {
+  /* This sets errors to red. */
+  color: #b00020;
+  /* This adds space around the errors. */
+  margin: 15px 0;
+  /* This makes errors easier to see. */
+  font-weight: bold;
+}
+
+/* This styles result boxes for recommendation and bill pages. */
+.result-box {
+  /* This sets a light orange background. */
+  background: #fff3d9;
+  /* This adds an orange left border. */
+  border-left: 5px solid #f28c28;
+  /* This adds space above the result box. */
+  margin-top: 20px;
+  /* This adds space inside the result box. */
+  padding: 15px;
+}
+
+/* This styles the footer. */
+footer {
+  /* This sets the footer background to green. */
+  background: #163b2c;
+  /* This makes the footer text white. */
+  color: white;
+  /* This centres the footer text. */
+  text-align: center;
+  /* This adds space inside the footer. */
+  padding: 15px;
+  /* This adds space above the footer. */
+  margin-top: 30px;
+}
+
+/* This media query changes layout on tablets. */
+@media screen and (max-width: 1023px) {
+  /* This changes restaurant cards to two columns. */
+  .cards { grid-template-columns: repeat(2, 1fr); }
+  /* This stacks home page boxes vertically. */
+  .three-boxes { flex-direction: column; }
+  /* This makes each home page box full width. */
+  .three-boxes article { width: 100%; }
+}
+
+/* This media query changes layout on mobile phones. */
+@media screen and (max-width: 767px) {
+  /* This stacks nav links vertically. */
+  nav a { display: block; }
+  /* This stacks the hero text and image vertically. */
+  .hero { flex-direction: column; }
+  /* This makes hero text and image full width. */
+  .hero div, .hero img { width: 100%; }
+  /* This changes restaurant cards to one column. */
+  .cards { grid-template-columns: 1fr; }
+}
